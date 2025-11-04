@@ -16,11 +16,10 @@ class RoleSeeder extends Seeder
          DB::table('roles')->insert([
              [
                 'nama_role' => 'admin',
-                
                 'deskripsi' => 'Bertanggung jawab terhadap pencatatan, dokumen, dan pengarsipan data pesanan.',
             ],
             [
-                'nama_role' => 'Bagian Desain',
+                'nama_role' => 'Desain',
                 'deskripsi' => 'Mengatur dan membuat desain produk sesuai permintaan pelanggan.',
             ],
             [
