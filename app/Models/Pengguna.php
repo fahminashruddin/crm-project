@@ -64,18 +64,18 @@ class Pengguna extends Authenticatable implements FilamentUser
             return $this->role_id === 2;
         }
 
-        // if ($panel->getId() === 'produksi') {
-        //     return $this->role_id === 3;
-        // }
+        if ($panel->getId() === 'produksi') {
+            return $this->role_id === 3;
+        }
 
-        // if ($panel->getId() === 'manajemen') {
-        //     return $this->role_id === 4;
-        // }
+        if ($panel->getId() === 'manajemen') {
+            return $this->role_id === 4;
+        }
 
         // (Opsional: Izinkan admin mengakses semua panel)
-        // if ($this->role_id === 1) {
-        //     return true;
-        // }
+        if ($this->role_id === 1) {
+            return true;
+        }
 
         return false;
     }
